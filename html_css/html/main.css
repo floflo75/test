@@ -1,0 +1,37 @@
+
+
+header
+{
+    background-color: aqua;
+}
+nav{
+    background-color: beige;
+}
+aside{
+    background-color: blueviolet;
+}
+main{
+    background-color: cadetblue;
+}
+footer{
+    background-color: crimson;
+}
+
+
+@-webkit-keyframes colorize {
+    0% {
+        -webkit-filter: grayscale(100%);
+    }
+    100% {
+        -webkit-filter: grayscale(0%);
+    }
+}
+
+@keyframes colorize {
+    0% {
+        filter: grayscale(100%);
+    }
+    100% {
+        filter: grayscale(0%);
+    }
+}

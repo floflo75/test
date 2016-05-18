@@ -1,0 +1,14 @@
+les div sont remplacés par 
+header
+nav
+aside
+main
+footer
+button peut être utilisé à l'ext ou à l'intérieur du formulaire on peut ajouter des fonctions particulières
+Opéra device emulator/View port resize
+!important balise qui passer en priorité une valueur css parmis les autres
+Exemple utilisation font family
+font-family:Arial Verdana Hevetica sans serif
+microsoft shadow
+webkit option permettant des options pour l'affichage pour chrome. ex 
+-webkit -reflect -webkit -cross -fade(url(payasage.png), url(...png)---> permet de fondre une image sur l'autre par jeu de transparence

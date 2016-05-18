@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Doc ready</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style></style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <style>
+        .reverse{
+            background-color: black; color: white;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#btnA").click(function(){
+                //console.log('A cliked');
+                $(".row").addClass("reverse");
+            });
+            
+           $("#btnB").click(function(){
+               
+                $(".row").removeClass("reverse");
+            });
+            $("#btnC").click(function(){
+                
+                $(".row").toggleClass("reverse");
+            });
+     
+            
+        });
+        
+        
+    </script>
+    
+    </head>
+        <body>
+            <h1>Home</h1>
+            <div class="row">
+                <p id="outputContent">jmdjvdmvjm</p>
+            
+            <div>
+                <h2>Buttons</h2>
+           <button id="btnA">Bouton A</button>
+            <button id="btnB">Bouton B</button>
+            <button id="btnC">Bouton C</button>
+        
+            </div></div> 
+    </body>
+</html>

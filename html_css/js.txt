@@ -1,0 +1,13 @@
+Ref pr js  voir mdn. Pr tester les codes js diddle.net
+
+prompt.
+Voir les modes de stockage ( temporaire et local storage).
+pr panier liste course voir body on load="afficher", un tableau sera générer dynamiquement lorque l'on remplis le formulaire.
+voir les fonctions qui permettent de stocker les données dans une variable--->localStorage.setItem(produit,data);
+pr supprimer localStorage.removeItem(par ex produit); localStorage.clear(supprimer toutes les valeurs stockées) localStorage.length-1; localStorage.getItem(key ou clé);
+document.getElementById.
+Pour le stockage temporaire on utilise sessionStorage, même fonctionnement que localStorage idéal pour les formulaires afin que les internautes valide par exemple 
+une commande ou adresse de livraison, la validation se fera une 2ème page qui affichera sous forme d'une étiquette le récapitulatif
+Voir les applications pour les sites en mode déconnecté (offline)-->Appcache, les fichiers sont stockées en local; le fichier de mise en cache--->manifest, c'est un fichier texte en brute, 
+av pour extension .appcache, avant c'était .manifest mais n'est plus utilisés, ce fichier doit être inclus dans un fichier html.
+le fichier .manifest comporte 3 parties ( CACHE, NETWORK et FALLBACK).

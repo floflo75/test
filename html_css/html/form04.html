@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+               background-color: burlywood; width: 60%;
+            }
+            fieldset{
+                border-color: black;
+            }
+            legend{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="mailto:florence.traore@gmail.com" method="post" enctype="text/plain">
+            <fieldset>
+                <legend>Clients</legend>
+                Nom et prénom : <input type="text" name="n1"><br/><br/>
+               Adresse <input type="text" name="n1"><br/><br/>
+               Code postal  <input type="text" name="n1" pattern="[0;9][5]"><br/><br/>
+              Pays  <input placeholder="FRANCE"><br/><br/>
+                
+                
+            </fieldset>
+                <form action="">
+            <fieldset>
+                <legend>Commandes</legend>
+                Modèle: <input type="text" readonly name="Modele" value="Road 66" ><br/><br/>
+                Taille <br/><input type="radio" name="taille">S<br/>
+                <input type="radio" name="taille">M<br/>
+               <input type="radio" name="taille">L<br/>
+               <input type="radio" name="taille">XL<br/>
+            
+              Quantité <input type="text" name="n1"><br/><br/>
+              
+                
+                
+            </fieldset><br/>
+         <input type="submit" value="Commander"> 
+         <input type="reset" value="Recommencer">
+        </form>
+        
+    </body>
+</html>

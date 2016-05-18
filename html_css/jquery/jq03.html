@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Doc ready</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    
+    </head>
+        <body>
+            
+            
+            <script>
+            
+         /*    $(document).ready(function(){
+        $("p").on({
+            mouseenter:function(){
+                $(this).css("background-color","bisque");
+            },
+             mouseleave:function(){
+                $(this).css("background-color","white");
+            }
+           
+        });
+    }); 
+    
+    $(document).ready(function(){
+        $("#btnA").click(function(){
+            console.log($("#two").text());
+            $("#output").html($("#two").text());
+             });
+             
+            $("#btnB").click(function(){
+             $("#output").html ($("#two").html());
+             console.log($("#two").html());
+            });
+        $("#btnC").click(function(){
+             $("#output").html($("#firstName").val());
+         
+            });
+        $("#btnD").click(function(){
+            $("#output").html($("#myImage").attr("alt"));
+        });
+    });*/
+      $(document).ready(function(){
+            $("#btnA").click(function(){
+                //console.log('A cliked');
+                $(".row").css("background-color","yellow");
+            });
+            
+           $("#btnB").click(function(){
+               
+                $(".row").css({"backgroung-color":"blue","font-size":"200%", "color":"red"});
+            });
+            $("#btnC").click(function(){
+                
+                $(".row").css({"backgroung-color":"white","font-size":"100%"});
+            });
+     
+            
+        });
+            </script>    
+ <div id="section">
+     <div class="row">
+            <h1>HOME</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Suspendisse bibendum ex nibh, volutpat porta felis rutrum sed. <br/>
+            <span class="one">Sed bibendum lorem a odio fringilla commodo.</span> Curabitur nulla ipsum, faucibus nec sem et, cursus pharetra quam.<br/> 
+Ut id aliquet nisi. Nullam eget malesuada sem.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>
+Suspendisse bibendum ex nibh, volutpat porta felis rutrum sed. 
+Sed bibendum lorem a odio fringilla commodo.<br/>
+<a href="">Curabitur nulla ipsum</a> faucibus nec sem et, cursus pharetra quam. 
+Ut id aliquet nisi. Nullam eget malesuada sem.<br/>
+            
+            <h4>Random Developers</h4>
+Vestibulum et blandit arcu. Donec sit amet erat a sapien dapibus feugiat. 
+Aliquam vel mauris congue, dignissim nisl eget, lobortis orci.            
+<div id="three">
+<ul>
+<li id="ListA">Liste A</li>
+<li id="ListB">Liste B</li>
+<li id="ListC">Liste C</li>
+<li id="ListD">Liste D</li>
+<li id="ListE" >Liste E</li>
+</ul></div>
+<p>Some links to <a href="">website</a><br/><br/>
+            In ac magna a quam aliquet semper. Cras in nunc eu ex gravida elementum. 
+Nunc faucibus quam sed auctor feugiat. Nulla quis magna at nisl accumsan tincidunt.<br/>
+ Nam posuere commodo felis, at tristique risus pulvinar sed. Maecenas vel pulvinar sem, non euismod libero. 
+Sed ac quam in felis sagittis dictum. Nulla mattis pulvinar pulvinar.<br/><br/>
+<img src="200.jpg"><br/>
+
+One more new here <a href="www.yahoo.fr">YAHOO</a>
+            </p>
+            
+             <form action="mailto:florence.traore@gmail.com" method="post" enctype="text/plain">
+            <fieldset>
+                <legend>Clients</legend>
+                Nom et prénom : <input type="text" name="n1"><br/><br/>
+               Adresse <input type="text" name="n1"><br/><br/>
+               Code postal  <input type="text" name="n1" pattern="[0;9][5]"><br/><br/>
+              Pays  <input placeholder="FRANCE"><br/><br/>
+                
+                
+            </fieldset>
+ </form><br/>
+            <button id="btnA">Bouton A</button>
+            <button id="btnB">Bouton B</button>
+            <button id="btnC">Bouton C</button>           
+        </div>    </div>
+        
+    </body>
+</html>

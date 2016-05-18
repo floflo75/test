@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Doc ready</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style></style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btnA").click(function(){
+                console.log('A cliked');
+                $(".first").append("Text Appended.");
+            });
+            
+           $("#btnB").click(function(){
+               console.log('B cliked');
+                $(".first").after("Text After.");
+            });
+            $("#btnC").click(function(){
+                console.log('C cliked');
+                $("#outputContent").prepend("Text prepended.");
+            });
+            
+            $("#btnD").click(function(){
+                console.log('D cliked');
+                $("#outputContent").before("Text Before.");
+            });
+            $("#btnE").click(function(){
+                console.log('E cliked empty');
+                $("#outputContent").fadeTo(5000,0.1);
+            });
+            $("#btnF").click(function(){
+                console.log('F clicked remove');
+                $("#outputContent").remove();
+            });
+             $("#btnG").click(function(){
+                console.log('G clicked');
+                $("#outputContent").text("Just some default text.");
+            });
+            
+        });
+        
+        
+    </script>
+    </head>
+        <body>
+            <h1>Home</h1>
+            <div>
+                <p id="outputContent">jmdjvdmvjm</p>
+            </div>
+            <div>
+                <h2>Buttons</h2>
+           <button id="btnA">Bouton A</button>
+            <button id="btnB">Bouton B</button>
+            <button id="btnC">Bouton C</button>
+            <button id="btnD">Bouton D</button> 
+            <button id="btnE">Bouton E</button>
+            <button id="btnF">Bouton F</button>
+            <button id="btnG">Bouton G</button>
+            </div> 
+    </body>
+</html>

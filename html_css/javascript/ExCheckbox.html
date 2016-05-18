@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Checkbox</title>
+<script type="text/javascript" src="ExCheckbox.js">
+
+</script>
+</head>
+
+<body>
+<form method="post" action="traitement.php" name="frm">
+
+<input type="checkbox" name="c1" value="c1" id="c1"/>
+<label for="c1">Choix n°1</label><br/>
+
+<input type="checkbox" name="c2" value="c2" id="c2"/>
+<label for="c2">Choix n°2</label><br/>
+
+<input type="checkbox" name="c3" value="c3" id="c3"/>
+<label for="c3">Choix n°3</label><br/>
+<input type="checkbox" name="c4" value="c4" id="c4" onChange="valid()"/>
+<label for="c4">Valider tous les choix</label><br/>
+<br/>
+<input type="submit" value="Valider"/><br/>
+
+</form>
+<br/>
+
+</body>
+</html>

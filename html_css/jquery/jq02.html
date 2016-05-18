@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Doc ready</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <style>
+            
+            .one{
+                
+            }
+            .example{
+                background-color: bisque;
+            }
+            
+            #three{
+                
+            }
+            
+        </style>
+        <script>
+            $(document).ready(function(){
+            
+        
+                $("#one").click(function(){
+                    $("#one").hide();
+                });
+                $("#one").click(function(){
+                    $("#one").hide();
+                });
+            $("h1").click(function(){
+                console.log('clicked H1');
+                $("p.one").addClass('example');
+            } );
+            $("li").click(function(){
+                console.log('clicked');
+                $("#three ul li#ListC").hide();
+            });
+        $("a").click(function(e){
+            e.preventDefault();
+            $("a[target!='_blank']").addClass('example');
+        });
+    });
+    
+    $(document).ready(function(){
+        $("#ListA").click(function(){
+            $("output").html("You clicked the first list item");
+        });
+       
+        $("#ListB").dblclick(function(){
+            $(this).html("double clicked");
+        });
+        
+        $("#ListC").mouseenter(function(){
+            $(this).html("mouse entered");
+        });
+        
+        $("#ListD").mouseleave(function(){
+            $(this).html("mouse leave");
+        });
+        
+        $("#ListE").hover(function(){
+            $(this).html('hover');
+        },function(){
+            $(this).html('gone');
+        });
+        
+    });
+    
+    $(document).ready(function(){
+        $("li").on({
+            mouseenter:function(){
+                $(this).css("color","blue");
+            },
+             mouseleave:function(){
+                $(this).css("color","red");
+            },
+            click:function(){
+                $(this).hide();
+            }
+        });
+    });
+        
+            </script>
+            
+        
+    
+    </head>
+        <body>
+            <div id="section">
+            <h1>HOME</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Suspendisse bibendum ex nibh, volutpat porta felis rutrum sed. <br/>
+            <span class="one">Sed bibendum lorem a odio fringilla commodo.</span> Curabitur nulla ipsum, faucibus nec sem et, cursus pharetra quam.<br/> 
+Ut id aliquet nisi. Nullam eget malesuada sem.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>
+Suspendisse bibendum ex nibh, volutpat porta felis rutrum sed. 
+Sed bibendum lorem a odio fringilla commodo.<br/>
+<a href="">Curabitur nulla ipsum</a> faucibus nec sem et, cursus pharetra quam. 
+Ut id aliquet nisi. Nullam eget malesuada sem.<br/>
+            
+            <h4>Random Developers</h4>
+Vestibulum et blandit arcu. Donec sit amet erat a sapien dapibus feugiat. 
+Aliquam vel mauris congue, dignissim nisl eget, lobortis orci.            
+<div id="three">
+<ul>
+<li id="ListA">Liste A</li>
+<li id="ListB">Liste B</li>
+<li id="ListC">Liste C</li>
+<li id="ListD">Liste D</li>
+<li id="ListE" >Liste E</li>
+</ul></div>
+<p>Some links to <a href="">website</a><br/><br/>
+            In ac magna a quam aliquet semper. Cras in nunc eu ex gravida elementum. 
+Nunc faucibus quam sed auctor feugiat. Nulla quis magna at nisl accumsan tincidunt.<br/>
+ Nam posuere commodo felis, at tristique risus pulvinar sed. Maecenas vel pulvinar sem, non euismod libero. 
+Sed ac quam in felis sagittis dictum. Nulla mattis pulvinar pulvinar.<br/><br/>
+
+One more new here <a href="www.yahoo.fr">YAHOO</a>
+            </p>
+            <button id="btnA">Bouton A</button>
+            <button id="btnB">Bouton B</button>
+            <button id="btnC">Bouton C</button>           
+        </div>    
+            
+    </body>
+</html>

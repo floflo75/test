@@ -1,0 +1,22 @@
+jquery est un framework de javascript.
+L'utilisation on télécharge jquery sur jquery.com
+Sur le site il esxiste 2 versions il est conseillé de prendre la version 1.X car accepté par tous les navigateurs. 
+Choisir la version incompréssée.
+Pour le cdn(content delivery content), c'est plus rapide, il n'est utile de télécharger. on ajoute un lien dans la 
+partie head de la page html <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>.
+La syntaxe :
+$(selector).action(); ex: $(this).hide()-Permet de cacher un élément, $('p').hide-cache tous les element <p>
+Le code jquery est a placer dans cette partie:
+Le document ready ( la plus utilisé)
+$(document) .ready(function(){
+//jQuery methods go here...
+}
+
+ou ( moins utilisé)
+$(function(){
+}
+
+Pout savoir les différentes méthode voir api.jquery.com
+
+
+ 

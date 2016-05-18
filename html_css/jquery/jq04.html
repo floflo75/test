@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Events on form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    
+    </head>
+        <body>
+            
+            
+            <script>
+            
+                  $(document).ready(function(){
+                      $("input").focus(function(){
+                          $(this).css("background-color","pink");
+                          $(this).val("clicked");
+                      })
+                     ;
+                $("input").blur(function(){
+                          $(this).css("background-color","bisque");
+                          $(this).val("");
+                      });   
+                 
+                  });  
+            </script> 
+ <form action="mailto:florence.traore@gmail.com" method="post" enctype="text/plain">
+            <fieldset>
+                <legend>Clients</legend>
+                Nom et prénom : <input type="text" name="n1"><br/><br/>
+               Adresse <input type="text" name="n1"><br/><br/>
+               Code postal  <input type="text" name="n1" pattern="[0;9][5]"><br/><br/>
+              Pays  <input placeholder="FRANCE"><br/><br/>
+                
+                
+            </fieldset>
+ </form>
+    </body>
+</html>
